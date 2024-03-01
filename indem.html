@@ -6,6 +6,18 @@
     <title>SAM's Alphabed</title>
     <!-- link of css  -->
     <link rel="stylesheet" href="/style.css" />
+    <!-- link Google Fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- link Gont Awasam  -->
+    <script
+      src="https://kit.fontawesome.com/e6b4a99a6b.js"
+      crossorigin="anonymous"
+    ></script>
     <!-- link Tailwind daisy UI  -->
     <link
       href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css"
@@ -15,11 +27,152 @@
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
-    <div class="min-h-svh"></div>
     <!-- header -->
     <header></header>
     <!-- Main  -->
-    <main></main>
+    <main class="relative">
+      <div>
+        <img
+          class="absolute w-64 right-20 top-0"
+          src="./img/SAMI_Logo.png "
+          alt=""
+        />
+      </div>
+      <!-- home menu  -->
+      <section class="hidden">
+        <div class="bg-cover bg-no-repeat min-h-svh bg-[url('./img/bg1.jpg')]">
+          <div
+            class="flex justify-center items-center min-h-screen gap-52 flex-col t"
+          >
+            <h1 class="t-font text-9xl text-red-500 font-semibold">
+              Let's Play . ..
+            </h1>
+            <button
+              class="btn btn-wide glass btn-outline text-green-400 font-bold text-3xl"
+            >
+              << Play >>
+            </button>
+          </div>
+        </div>
+      </section>
+      <!-- Play Ground  -->
+      <section class="">
+        <div class="bg-cover bg-no-repeat min-h-svh bg-[url('./img/bg2.jpg')]">
+          <!-- display containt  -->
+
+          <div
+            class="min-h-svh flex flex-col gap-20 items-center justify-center"
+          >
+            <div
+              class="artboard artboard-horizontal phone-1 border-2 border-cyan-400 rounded-3xl bg-[#ffffff30]"
+            >
+              <h2 class="flex justify-center text-red-100 text-xl">
+                <p
+                  class="bg-[#DFEEEB40] px-3 pb-1 text-[#f31111] font-semibold rounded-b-xl"
+                >
+                  Don't watch keY-Board When you Typing . ..
+                </p>
+              </h2>
+              <div
+                class="flex items-center justify-center h-full text-[#4af9ff] font-semibold text-8xl -mt-10"
+              >
+                <span>A</span>
+              </div>
+            </div>
+
+            <!-- key  -->
+            <div>
+              <div class="key_board font-bold text-3xl uppercase">
+                <div class="flex justify-center gap-1 my-1 w-full">
+                  <kbd class="kbd">q</kbd>
+                  <kbd class="kbd">w</kbd>
+                  <kbd class="kbd">e</kbd>
+                  <kbd class="kbd">r</kbd>
+                  <kbd class="kbd">t</kbd>
+                  <kbd class="kbd">y</kbd>
+                  <kbd class="kbd">u</kbd>
+                  <kbd class="kbd">i</kbd>
+                  <kbd class="kbd">o</kbd>
+                  <kbd class="kbd">p</kbd>
+                </div>
+                <div class="flex justify-center gap-1 my-1 w-full">
+                  <kbd class="kbd">a</kbd>
+                  <kbd class="kbd">s</kbd>
+                  <kbd class="kbd">d</kbd>
+                  <kbd class="kbd">f</kbd>
+                  <kbd class="kbd">g</kbd>
+                  <kbd class="kbd">h</kbd>
+                  <kbd class="kbd">j</kbd>
+                  <kbd class="kbd">k</kbd>
+                  <kbd class="kbd">l</kbd>
+                </div>
+                <div class="flex justify-center gap-1 my-1 w-full">
+                  <kbd class="kbd">z</kbd>
+                  <kbd class="kbd">x</kbd>
+                  <kbd class="kbd">c</kbd>
+                  <kbd class="kbd">v</kbd>
+                  <kbd class="kbd">b</kbd>
+                  <kbd class="kbd">n</kbd>
+                  <kbd class="kbd">m</kbd>
+                  <kbd class="kbd">/</kbd>
+                </div>
+              </div>
+            </div>
+            <!-- button  -->
+            <div class="flex gap-5 justify-between lg:w-3/5 md:w-full md:px-12">
+              <button
+                class="btn btn text-2xl bg-slate-400 border-none text-blue-800"
+              >
+                Life <i class="fa-solid fa-heart-circle-bolt"></i>
+                <span class="text-red-800 text-3xl font-bold">5</span>
+              </button>
+              <button
+                class="btn glass text-4xl font-bold bg-[#1c1f1ea4] text-[#fa78aa] t-font"
+              >
+                Pracrise Make You Pro !!
+                <i class="fa-regular fa-hand-peace"></i>
+              </button>
+              <button
+                class="btn btn text-2xl bg-green-800 border-none text-cyan-400"
+              >
+                Score
+                <i
+                  class="fa-solid fa-arrow-up-short-wide text-pink-300 text-3xl"
+                ></i>
+                <span class="text-gray-950 text-3xl font-bold">0</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Score Menu  -->
+      <section class="hidden">
+        <div>
+          <div class="bg-cover bg-no-repeat min-h-svh bg-[url('./img/bg.jpg')]">
+            <div
+              class="flex justify-center items-center min-h-screen gap-52 flex-col t"
+            >
+              <div class="p-5 lg:mt-64 ml-96 bg-[#ffffff56] rounded-3xl">
+                <h1 class="text-center text-6xl text-[#30f8e7] font-semibold">
+                  Congratulations !
+                  <i class="fa-regular fa-thumbs-up text-[#ff6868]"></i>
+                </h1>
+                <h1
+                  class="text-center text-5xl pt-5 text-[#e9ff85] font-semibold"
+                >
+                  Your Score: <span class="text-[#79ff67]">0</span>
+                </h1>
+                <p class="text-center mt-10 text-[#412c2c] text-xl font-bold">
+                  share a screenshot of your score in our what's-app group.<a
+                    href=""
+                  ></a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
     <!-- Footer -->
     <footer></footer>
   </body>
