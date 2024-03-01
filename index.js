@@ -52,6 +52,7 @@ function endOfGame() {
 function playBack() {
   reset();
   hideEliment("Score_section");
+  hideEliment("wrong");
   addEliment("play_ground");
   ContinueGame();
 }
